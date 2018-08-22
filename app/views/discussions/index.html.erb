@@ -1,0 +1,31 @@
+
+<p id="notice"><%= notice %></p>
+
+
+  <h4>Discussions</h4>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Topic</th>
+        <th>Content</th>
+        <th colspan="3"></th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <% @discussions.each do |discussion| %>
+        <tr>
+          <td><%= discussion.topic %></td>
+          <td><%= discussion.content %></td>
+          <td><%= link_to 'Show', discussion, class: "btn waves-effect waves-teal btn-flat" %></td>
+          <td><%= link_to 'Edit', edit_discussion_path(discussion), class: "btn waves-effect waves-teal btn-flat" %></td>
+          <td><%= link_to 'Delete', discussion, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn waves-effect waves-teal btn-flat" %></td>
+        </tr>
+      <% end %>
+    </tbody>
+  </table>
+
+  <br>
+
+  <%= link_to 'New Discussion', new_discussion_path, class:"btn waves-effect waves-light" %>
