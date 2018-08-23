@@ -1,0 +1,5 @@
+<h2>All Tanks</h2>
+
+<% @tanks.each do |tank| %>
+	<li><%= link_to tank.profile_name, tank %></li>
+<% end %>

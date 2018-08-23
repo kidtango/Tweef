@@ -10,7 +10,7 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2018_08_23_145407) do
+ActiveRecord::Schema.define(version: 2018_08_23_213558) do
 
   create_table "comments", force: :cascade do |t|
     t.text "content"
@@ -32,13 +32,26 @@ ActiveRecord::Schema.define(version: 2018_08_23_145407) do
     t.integer "tank_profile_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.string "image_id"
   end
 
   create_table "tank_profiles", force: :cascade do |t|
     t.string "profile_name"
+    t.string "display"
+    t.string "stand"
+    t.string "sump"
+    t.string "lighting"
+    t.string "filtration"
+    t.string "return_pump"
+    t.string "water_cirrculation"
+    t.string "calcium_reactor"
+    t.string "auto_top_off"
+    t.string "heating_and_cooling"
+    t.string "other_equipment"
     t.integer "user_id"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
+    t.index ["user_id"], name: "index_tank_profiles_on_user_id"
   end
 
   create_table "users", force: :cascade do |t|

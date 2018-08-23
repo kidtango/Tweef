@@ -10,8 +10,15 @@
       </ul>
     </div>
   <% end %>
-
+	<div class='field'>
+		<%= form.label :image_url %><br />
+    <%= form.text_field :image_id %><br />
+	</div>
+	<div class='field'>
+		<%= form.label :tank_profile_id %><br />
+    <%= form.text_field :tank_profile_id %><br />
+	</div>
   <div class="actions">
-    <%= form.submit %>
+    <%= form.submit %><br /><br />
   </div>
 <% end %>

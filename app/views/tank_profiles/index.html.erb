@@ -1,6 +1,6 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Tank Profiles</h1>
+<h1><%= @current_user.first_name %>'s Tank Profiles</h1>
 
 <table>
   <thead>
@@ -10,11 +10,11 @@
   </thead>
 
   <tbody>
-    <% @tank_profiles.each do |tank_profile| %>
+    <% @current_user.tank_profiles.each do |tank_profile| %>
       <tr>
-        <td><%= link_to 'Show', tank_profile %></td>
+				<td><%= link_to tank_profile.profile_name, tank_profile %></td>
         <td><%= link_to 'Edit', edit_tank_profile_path(tank_profile) %></td>
-        <td><%= link_to 'Destroy', tank_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+        <td><%= link_to 'Remove Tank', tank_profile, method: :delete, data: { confirm: 'Are you sure?' } %></td>
       </tr>
     <% end %>
   </tbody>
