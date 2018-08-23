@@ -1,6 +1,7 @@
 class DiscussionsController < ApplicationController
   before_action :set_discussion, only: [:show, :edit, :update, :destroy]
   layout "form"
+  access all: [:show, :index], user: :all, site_admin: :all
 
   # GET /discussions
   # GET /discussions.json

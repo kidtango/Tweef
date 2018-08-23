@@ -1,5 +1,4 @@
 
-<p id="notice"><%= notice %></p>
 
 
   <h4>Discussions</h4>
@@ -28,4 +27,10 @@
 
   <br>
 
-  <%= link_to 'New Discussion', new_discussion_path, class:"btn waves-effect waves-light" %>
+<% if logged_in?(:site_admin, :user) %>
+  <%= link_to 'New Discussion', new_discussion_path , class:"btn waves-effect" %>
+<% end %>
+
+
+
+  
