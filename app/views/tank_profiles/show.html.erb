@@ -1,4 +1,20 @@
 <p id="notice"><%= notice %></p>
-
-<%= link_to 'Edit', edit_tank_profile_path(@tank_profile) %> |
-<%= link_to 'Back', tank_profiles_path %>
+<h3><%= @tank_profile.profile_name %></h3>
+<ul>
+	<li><strong>Display: </strong><%= @tank_profile.display %></li>
+	<li><strong>Stand: </strong><%= @tank_profile.stand %></li>
+	<li><strong>Sump: </strong><%= @tank_profile.sump %></li>
+	<li><strong>Lighting: </strong><%= @tank_profile.lighting %></li>
+	<li><strong>iltration: </strong><%= @tank_profile.filtration %></li>
+	<li><strong>Return Pump: </strong><%= @tank_profile.return_pump %></li>
+	<li><strong>Water Circulation: </strong><%= @tank_profile.water_cirrculation %></li>
+	<li><strong>Calcium Reactor: </strong><%= @tank_profile.calcium_reactor %></li>
+	<li><strong>Auto Top Off: </strong><%= @tank_profile.auto_top_off %></li>
+	<li><strong>Heating and Cooling: </strong><%= @tank_profile.heating_and_cooling %></li>
+	<li><strong>Other Equipment: </strong><%= @tank_profile.other_equipment %></li>
+</ul>
+<% if !current_user %>
+<% elsif current_user.id == @tank_profile.user.id %>
+<%= link_to 'Edit', edit_tank_profile_path(@tank_profile) %> 
+<% end %>
+<%= link_to 'Back', :back %>

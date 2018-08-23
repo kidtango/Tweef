@@ -3,6 +3,17 @@
     <a id="logo-container" class="brand-logo"><%= link_to (image_tag asset_path('logo.png')), root_path %></a>
     
     <ul class="right hide-on-med-and-down">
+			<% if current_user %>
+			<li>
+				<a>Hello, <%=current_user.first_name if current_user%>!</a>
+			</li>
+			<% end %>
+			<li>
+				<a><%= link_to 'Tanks', tanks_path %></a>
+			</li>
+			<li>
+				<a><%= link_to 'Discussions', discussions_path %></a>
+			</li>
       <% if !current_user %>
       <li>
           <a><%= link_to "Register", new_user_registration_path %></a>
@@ -11,10 +22,14 @@
           <a><%= link_to "Login", new_user_session_path %></a>
         </li>
       <% else %>
+			<li>
+				<a><%= link_to 'My Tanks', tank_profiles_path %></a>
+			</li>
       <li>
         <a><%= link_to "Logout", destroy_user_session_path, method: :delete %></a>
       </li>
       <% end %>
+			
     </ul>
     <ul id="nav-mobile" class="sidenav">
         <li><a href="#">Navbar Link</a></li>
