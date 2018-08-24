@@ -1,5 +1,5 @@
 class DiscussionsController < ApplicationController
-  before_action :set_discussion, only: [:show, :edit, :update, :destroy]
+  before_action :set_own_discussion, only: [:edit, :update, :destroy]
   layout "form"
   access all: [:show, :index], user: :all, site_admin: :all
 
@@ -12,6 +12,7 @@ class DiscussionsController < ApplicationController
   # GET /discussions/1
   # GET /discussions/1.json
   def show
+    @discussion = Discussion.find(params[:id])
   end
 
   # GET /discussions/new
@@ -66,8 +67,14 @@ class DiscussionsController < ApplicationController
   private
 
   # Use callbacks to share common setup or constraints between actions.
-  def set_discussion
-    @discussion = Discussion.find(params[:id])
+  def set_own_discussion
+    begin
+      @discussion =
+        current_user.discussions.find(params[:id])
+    rescue ActiveRecord::RecordNotFound => e
+      flash[:notice] = "Access denied"
+      redirect_to root_path
+    end
   end
 
   # Never trust parameters from the scary internet, only allow the white list through.
