@@ -1,6 +1,6 @@
 class PhotosController < ApplicationController
   before_action :set_photo, only: [:show, :edit, :update, :destroy]
-  access all: [:index, :show, :new, :edit, :create, :update, :destroy], user: :all
+  access all: [:index, :show], user: :all
 
   # GET /photos
   def index
@@ -9,6 +9,7 @@ class PhotosController < ApplicationController
 
   # GET /photos/1
   def show
+    @photo = Photo.find(params[:id])
   end
 
   # GET /photos/new
@@ -25,7 +26,7 @@ class PhotosController < ApplicationController
     @photo = Photo.new(photo_params)
 
     if @photo.save
-      redirect_to @photo, notice: 'Photo was successfully created.'
+      redirect_to request.referrer, notice: "Photo was successfully created."
     else
       render :new
     end
@@ -34,7 +35,7 @@ class PhotosController < ApplicationController
   # PATCH/PUT /photos/1
   def update
     if @photo.update(photo_params)
-      redirect_to @photo, notice: 'Photo was successfully updated.'
+      redirect_to @photo, notice: "Photo was successfully updated."
     else
       render :edit
     end
@@ -43,17 +44,18 @@ class PhotosController < ApplicationController
   # DELETE /photos/1
   def destroy
     @photo.destroy
-    redirect_to photos_url, notice: 'Photo was successfully destroyed.'
+    redirect_to photos_url, notice: "Photo was successfully destroyed."
   end
 
   private
-    # Use callbacks to share common setup or constraints between actions.
-    def set_photo
-      @photo = Photo.find(params[:id])
-    end
 
-    # Only allow a trusted parameter "white list" through.
-    def photo_params
-			params.require(:photo).permit(:tank_profile_id, :img_url)
-		end
+  # Use callbacks to share common setup or constraints between actions.
+  def set_photo
+    @photo = Photo.find(params[:id])
+  end
+
+  # Only allow a trusted parameter "white list" through.
+  def photo_params
+    params.require(:photo).permit(:tank_profile_id, :name, :image, :photo_tag)
+  end
 end
