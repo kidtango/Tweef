@@ -48,10 +48,12 @@
 
 			<br>
 
+<% if user_signed_in? and current_user.owns_assets?(@tank_profile)%>
+
 		<h4>Add Images</h4>
 
-		<%= form_with(model: @photo, local: true) do |form| %>
-  <% if @photo.errors.any? %>
+		  <%= form_with(model: @photo, local: true) do |form| %>
+    <% if @photo.errors.any? %>
     <div id="error_explanation">
       <h2><%= pluralize(@photo.errors.count, "error") %> prohibited this @photo from being saved:</h2>
 
@@ -60,8 +62,8 @@
         <li><%= message %></li>
       <% end %>
       </ul>
-    </div>
-  <% end %>
+      </div>
+    <% end %>
 
     <%= form.hidden_field :tank_profile_id %>
 
@@ -76,36 +78,49 @@
     <%= form.text_field :tag %>
   </div>
 
+
    <div class="field">
     <%= form.attachment_field :image, class: "btn waves-effect waves-light" %>
   </div>
 
+
   <br>
 
-  <div class="actions">
-    <%= form.submit "Add image", class: "btn waves-effect waves-light"  %>
-  </div>
+
+    <div class="actions">
+      <%= form.submit "Add image", class: "btn waves-effect waves-light"  %>
+    </div>
   
+  
+  <% end %>
 <% end %>
 
 
 <br>
 <br>
 
-<%= link_to 'Back', tank_profiles_path, class:"waves-effect waves-teal btn-flat" %> |
+  <%= link_to 'Back', tank_profiles_path, class:"waves-effect waves-teal btn-flat" %> |
 
-<% if current_user.id == @tank_profile.user.id %>
-		<%= link_to 'Edit', edit_tank_profile_path(@tank_profile), class: "waves-effect waves-teal btn-flat"%>
-		<% end %> 
+<% if user_signed_in? and current_user.owns_assets?(@tank_profile)%>
+
+	<%= link_to 'Edit', edit_tank_profile_path(@tank_profile), class: "waves-effect waves-teal btn-flat"%>
+
+<% end %>
 		
 <br>
 <br>
 
-<div class="container">
+<div class="row">
   <% @tank_profile.photos.each do |photo| %> 
+  
     <% if photo.image_id? %>
-      <%= link_to(image_tag(attachment_url(photo, :image, :fit, 100, 100, format: 'jpg')), attachment_url(photo, :image, :fit, 500, 500, format: 'jpg'), data: { lightbox: "example-set", title: photo.name }) %>  
+    
+      <%= link_to(image_tag(attachment_url(photo, :image, :fit, 600, 600, format: 'jpg')), attachment_url(photo, :image, :fit, 500, 500, format: 'jpg'), data: { lightbox: "example-set", title: photo.name }) %>  
+    
+    
     <% end %>
+   
   <% end %>
 </div>  
 
+ 

@@ -19,7 +19,7 @@ class User < ApplicationRecord
 
   # validates_presence_of :first_name, :last_name, :email
 
-  def owns_discussions?(discussion)
-    self.id == discussion.user_id
+  def owns_assets?(asset)
+    self.id == asset.user_id
   end
 end

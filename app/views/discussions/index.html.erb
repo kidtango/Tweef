@@ -24,7 +24,7 @@
           <% end %>
           
          
-          <% if user_signed_in? and current_user.owns_discussions?(discussion)%>
+          <% if user_signed_in? and current_user.owns_assets?(discussion)%>
             <td><%= link_to 'Delete', discussion, method: :delete, data: { confirm: 'Are you sure?' }, class: "btn waves-effect wave-teal btn-flat" %></td>
           <% end %>
         </tr>

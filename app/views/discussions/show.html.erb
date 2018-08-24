@@ -21,7 +21,7 @@
         <td><strong><%= comment.user.first_name %></strong>: <%= comment.content  %>
         <br>
 
-      <% if user_signed_in? and current_user.owns_discussions?(comment)%>
+      <% if user_signed_in? and current_user.owns_assets?(comment)%>
         <%= link_to 'remove comment', comment, method: :delete, data: { confirm: 'Are you sure?' }, class: "waves-effect waves-light btn-small btn-flat" %>
       <% end %>
 
