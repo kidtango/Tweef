@@ -2,7 +2,7 @@ class User < ApplicationRecord
   has_many :discussions
   has_many :tank_profiles
   has_many :photos, through: :tank_profile
-  has_many :comments, through: :discussion
+  has_many :comments
 
   ############################################################################################
   ## PeterGate Roles                                                                        ##
@@ -19,4 +19,7 @@ class User < ApplicationRecord
 
   # validates_presence_of :first_name, :last_name, :email
 
+  def owns_discussions?(discussion)
+    self.id == discussion.user_id
+  end
 end
