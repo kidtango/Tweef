@@ -1,20 +1,91 @@
 <p id="notice"><%= notice %></p>
-<h3><%= @tank_profile.profile_name %></h3>
-<ul>
-	<li><strong>Display: </strong><%= @tank_profile.display %></li>
-	<li><strong>Stand: </strong><%= @tank_profile.stand %></li>
-	<li><strong>Sump: </strong><%= @tank_profile.sump %></li>
-	<li><strong>Lighting: </strong><%= @tank_profile.lighting %></li>
-	<li><strong>iltration: </strong><%= @tank_profile.filtration %></li>
-	<li><strong>Return Pump: </strong><%= @tank_profile.return_pump %></li>
-	<li><strong>Water Circulation: </strong><%= @tank_profile.water_cirrculation %></li>
-	<li><strong>Calcium Reactor: </strong><%= @tank_profile.calcium_reactor %></li>
-	<li><strong>Auto Top Off: </strong><%= @tank_profile.auto_top_off %></li>
-	<li><strong>Heating and Cooling: </strong><%= @tank_profile.heating_and_cooling %></li>
-	<li><strong>Other Equipment: </strong><%= @tank_profile.other_equipment %></li>
-</ul>
-<% if !current_user %>
-<% elsif current_user.id == @tank_profile.user.id %>
-<%= link_to 'Edit', edit_tank_profile_path(@tank_profile) %> 
+<h4><%= @tank_profile.profile_name %></h4>
+
+<table class="striped">
+        <tbody>
+          <tr>
+            <th>Display</th>
+            <td><%= @tank_profile.display %></td>
+          </tr>
+          <tr>
+            <th>Stand</th>
+            <td><%= @tank_profile.stand %></td>
+          </tr>
+          <tr>
+ 						<th>Sump</th>
+            <td><%= @tank_profile.sump %></td>
+          </tr>
+					<tr>
+ 						<th>Lighting</th>
+            <td><%= @tank_profile.lighting %></td>
+          </tr>
+					<tr>
+ 						<th>Filtration</th>
+            <td><%= @tank_profile.display %></td>
+          </tr>
+					<tr>
+ 						<th>Water Circulation</th>
+            <td><%= @tank_profile.water_cirrculation   %></td>
+          </tr>
+					<tr>
+ 						<th>Calcium Reactor</th>
+            <td><%= @tank_profile.calcium_reactor  %></td>
+          </tr>
+					<tr>
+ 						<th>Auto Top Off</th>
+            <td><%= @tank_profile.auto_top_off %></td>
+          </tr>
+					<tr>
+ 						<th>Heating and Cooling</th>
+            <td><%= @tank_profile.heating_and_cooling %></td>
+          </tr>
+					<tr>
+ 						<th>Other Equipment</th>
+            <td><%= @tank_profile.other_equipment  %></td>
+          </tr>
+        </tbody>
+      </table>
+
+			<br>
+
+		<h4>Add Photos</h4>
+
+		<%= form_with(model: @photo, local: true) do |form| %>
+  <% if @photo.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@photo.errors.count, "error") %> prohibited this @photo from being saved:</h2>
+
+      <ul>
+      <% @photo.errors.full_messages.each do |message| %>
+        <li><%= message %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= form.label :photo_name %>
+    <%= form.text_field :name %>
+  </div>
+
+	 <div class="field">
+    <%= form.label :photo_tag %>
+    <%= form.text_field :tag %>
+  </div>
+
+   <div class="field">
+    <%= form.attachment_field :image %>
+  </div>
+
+  <div class="actions">
+    <%= form.submit %>
+  </div>
 <% end %>
-<%= link_to 'Back', :back %>
+
+<br>
+<br>
+
+<% if current_user.id == @tank_profile.user.id %>
+		<%= link_to 'Edit', edit_tank_profile_path(@tank_profile), class: "waves-effect waves-teal btn-flat"%>
+		<% end %> |
+		<%= link_to 'Back', tank_profiles_path, class:"waves-effect waves-teal btn-flat" %>

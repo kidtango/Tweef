@@ -63133,3 +63133,2519 @@ Processing by DiscussionsController#show as HTML
 Completed 200 OK in 81ms (Views: 63.4ms | ActiveRecord: 0.4ms)
 
 
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 22:57:06 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/web-console-3.6.2/lib/web_console/middleware.rb:135
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (2.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 414ms (Views: 364.0ms | ActiveRecord: 1.8ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 22:57:10 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (6.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 65.7ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 22:57:12 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (5.5ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 22:57:15 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.0ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 70.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 22:57:18 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (0.8ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 70.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 22:57:18 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 74.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 22:57:19 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 63.9ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/new" for 127.0.0.1 at 2018-08-23 22:57:23 -0500
+Processing by TankProfilesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/new.html.erb within layouts/form
+  Rendered tank_profiles/_form.html.erb (9.8ms)
+  Rendered tank_profiles/new.html.erb within layouts/form (11.8ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 87ms (Views: 71.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 22:57:27 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 69.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 22:59:27 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (0.8ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 60.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 22:59:36 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (2.3ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 67.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 22:59:37 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (0.9ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 69.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 22:59:38 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.0ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 66.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 22:59:39 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 65.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/discussions/new" for 127.0.0.1 at 2018-08-23 22:59:40 -0500
+Processing by DiscussionsController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/new.html.erb within layouts/form
+  Rendered discussions/_form.html.erb (15.1ms)
+  Rendered discussions/new.html.erb within layouts/form (17.0ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 85.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 22:59:44 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 76.6ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 22:59:45 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 63.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions/1" for 127.0.0.1 at 2018-08-23 23:00:15 -0500
+Processing by DiscussionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT  "discussions".* FROM "discussions" WHERE "discussions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/discussions_controller.rb:15
+  Rendering discussions/show.html.erb within layouts/form
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/discussions/show.html.erb:9
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."discussion_id" = ?[0m  [["discussion_id", 1]]
+  ↳ app/views/discussions/show.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/discussions/show.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/discussions/show.html.erb:21
+  Rendered discussions/show.html.erb within layouts/form (33.0ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 97ms (Views: 92.4ms | ActiveRecord: 1.1ms)
+
+
+Started DELETE "/logout" for 127.0.0.1 at 2018-08-23 23:00:39 -0500
+Processing by Devise::SessionsController#destroy as HTML
+  Parameters: {"authenticity_token"=>"2n6ZVX6vUoBr7xkH4hYpA5lX/fJldHKWJ/kEr2Ht8l2ioLSeUtK7k+SL+0a2gIgRUsL2OvomrlNy1t/jlZ7FMA=="}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/devise-4.5.0/lib/devise/models/rememberable.rb:62
+  [1m[35m (0.0ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/devise-4.5.0/lib/devise/models/rememberable.rb:62
+Redirected to http://localhost:3000/
+Completed 302 Found in 5ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:00:39 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  Rendered shared/_navbar.html.erb (5.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 94ms (Views: 92.1ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/login" for 127.0.0.1 at 2018-08-23 23:00:42 -0500
+Processing by Devise::SessionsController#new as HTML
+  Rendering devise/sessions/new.html.erb within layouts/devise
+  Rendered devise/shared/_links.html.erb (1.4ms)
+  Rendered devise/sessions/new.html.erb within layouts/devise (7.0ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 88.2ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/login" for 127.0.0.1 at 2018-08-23 23:00:43 -0500
+Processing by Devise::SessionsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"0LVKB+RxR9lterc/BwGexGv1CBDMpFrmZWGmXi3CyYx2nTUJtqN7Ik+u7DNrKomdT6dTACdlfU5gJQE6wavnWA==", "user"=>{"email"=>"fq600@yahoo.com", "password"=>"[FILTERED]", "remember_me"=>"0"}, "commit"=>"Log in"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."email" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["email", "fq600@yahoo.com"], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:22
+Redirected to http://localhost:3000/
+Completed 302 Found in 128ms (ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:00:44 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (2.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 83ms (Views: 81.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:01:03 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (0.9ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:02:58 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (0.8ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.7ms)
+Completed 200 OK in 2368ms (Views: 2364.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:03:20 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 83ms (Views: 78.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:03:24 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.0ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 93ms (Views: 87.1ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:03:25 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 90ms (Views: 85.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:03:25 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (2.1ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 65.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:03:48 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 65.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:03:52 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 68ms (Views: 64.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:03:57 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.0ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:03:59 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 69ms (Views: 65.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:04:01 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 63ms (Views: 61.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:04:04 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.4ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 64.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:04:05 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.8ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:04:06 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 70.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:04:25 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 1703ms (Views: 1700.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:04:45 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 60.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:04:47 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.2ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 57.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:04:49 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.4ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 61ms (Views: 58.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:04:50 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.9ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 63.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:04:51 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 71.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:04:52 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (2.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 64.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:04:52 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 63.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:06:04 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.2ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 58.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:06:05 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.4ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 67ms (Views: 63.7ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:06:07 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.2ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 67.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:06:08 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 66.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:06:10 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 67.2ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:06:11 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.8ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/user/edit" for 127.0.0.1 at 2018-08-23 23:08:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user/edit"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/user/update" for 127.0.0.1 at 2018-08-23 23:08:32 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/user/update"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users/sign_up" for 127.0.0.1 at 2018-08-23 23:09:15 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users/sign_up"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2018-08-23 23:09:20 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/users" for 127.0.0.1 at 2018-08-23 23:10:03 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/users"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:10:11 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 62.1ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:10:17 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.2ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 63ms (Views: 59.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:11:02 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (0.7ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 58ms (Views: 55.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:11:29 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (3.4ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 79.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/edit/user" for 127.0.0.1 at 2018-08-23 23:11:33 -0500
+  
+ActionController::RoutingError (No route matches [GET] "/edit/user"):
+  
+actionpack (5.2.1) lib/action_dispatch/middleware/debug_exceptions.rb:65:in `call'
+web-console (3.6.2) lib/web_console/middleware.rb:135:in `call_app'
+web-console (3.6.2) lib/web_console/middleware.rb:30:in `block in call'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `catch'
+web-console (3.6.2) lib/web_console/middleware.rb:20:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/show_exceptions.rb:33:in `call'
+railties (5.2.1) lib/rails/rack/logger.rb:38:in `call_app'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `block in call'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `block in tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:28:in `tagged'
+activesupport (5.2.1) lib/active_support/tagged_logging.rb:71:in `tagged'
+railties (5.2.1) lib/rails/rack/logger.rb:26:in `call'
+sprockets-rails (3.2.1) lib/sprockets/rails/quiet_assets.rb:13:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/remote_ip.rb:81:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/request_id.rb:27:in `call'
+rack (2.0.5) lib/rack/method_override.rb:22:in `call'
+rack (2.0.5) lib/rack/runtime.rb:22:in `call'
+activesupport (5.2.1) lib/active_support/cache/strategy/local_cache_middleware.rb:29:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/executor.rb:14:in `call'
+actionpack (5.2.1) lib/action_dispatch/middleware/static.rb:127:in `call'
+rack (2.0.5) lib/rack/sendfile.rb:111:in `call'
+railties (5.2.1) lib/rails/engine.rb:524:in `call'
+puma (3.12.0) lib/puma/configuration.rb:225:in `call'
+puma (3.12.0) lib/puma/server.rb:658:in `handle_request'
+puma (3.12.0) lib/puma/server.rb:472:in `process_client'
+puma (3.12.0) lib/puma/server.rb:332:in `block in run'
+puma (3.12.0) lib/puma/thread_pool.rb:133:in `block in spawn_thread'
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:12:04 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (0.9ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:12:09 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (2.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 68ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:12:11 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (3.4ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 72.1ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:12:30 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (2.7ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 69ms (Views: 67.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:12:31 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (2.9ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 71.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:12:34 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (2.5ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 69.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:14:31 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (3.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 70ms (Views: 67.4ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:14:39 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (0.8ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 63ms (Views: 59.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:14:42 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 73ms (Views: 70.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:14:45 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (3.8ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 73.9ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:14:54 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (2.6ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 66.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:14:55 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.1ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 73ms (Views: 68.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:14:56 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (3.5ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 79.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:14:57 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.8ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 63.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:15:06 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 62.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:15:14 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (2.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 64ms (Views: 61.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:17:13 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 65ms (Views: 63.2ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:17:14 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 79ms (Views: 76.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:18:37 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (4.2ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 1742ms (Views: 1739.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:18:48 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 89ms (Views: 85.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:33:44 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (3.2ms)
+  Rendered shared/_navbar.html.erb (2.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 88ms (Views: 70.1ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:33:45 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (2.1ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 72.5ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:33:47 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (7.3ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 83ms (Views: 77.8ms | ActiveRecord: 0.7ms)
+
+
+Started GET "/discussions/1" for 127.0.0.1 at 2018-08-23 23:33:50 -0500
+Processing by DiscussionsController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mDiscussion Load (0.1ms)[0m  [1m[34mSELECT  "discussions".* FROM "discussions" WHERE "discussions"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/discussions_controller.rb:15
+  Rendering discussions/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/discussions/show.html.erb:9
+  [1m[36mComment Load (0.1ms)[0m  [1m[34mSELECT "comments".* FROM "comments" WHERE "comments"."discussion_id" = ?[0m  [["discussion_id", 1]]
+  ↳ app/views/discussions/show.html.erb:19
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/discussions/show.html.erb:21
+  [1m[36mCACHE User Load (0.0ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/discussions/show.html.erb:21
+  Rendered discussions/show.html.erb within layouts/form (23.1ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 78.6ms | ActiveRecord: 1.2ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:34:10 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (2.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:34:13 -0500
+Processing by DiscussionsController#index as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 67ms (Views: 63.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:34:14 -0500
+Processing by TankProfilesController#home as HTML
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.1ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 65ms (Views: 61.1ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:34:15 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.9ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 77ms (Views: 73.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:38:45 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.2ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 2116ms (Views: 2113.1ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/edit" for 127.0.0.1 at 2018-08-23 23:38:50 -0500
+Processing by Devise::RegistrationsController#edit as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering devise/registrations/edit.html.erb within layouts/devise
+  Rendered devise/registrations/edit.html.erb within layouts/devise (3.5ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 74ms (Views: 71.5ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:38:51 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.8ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (3.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 74ms (Views: 72.3ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:39:51 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (19.4ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 91ms (Views: 87.6ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:39:53 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (3.3ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 77ms (Views: 74.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:40:08 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/web-console-3.6.2/lib/web_console/middleware.rb:135
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (1.2ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (20.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 3335ms (Views: 3323.7ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2018-08-23 23:40:15 -0500
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:13
+  Rendered photos/index.html.erb within layouts/application (2.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 85ms (Views: 77.9ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/photos/new" for 127.0.0.1 at 2018-08-23 23:40:18 -0500
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (6.5ms)
+  Rendered photos/new.html.erb within layouts/application (8.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 85ms (Views: 76.8ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/photos" for 127.0.0.1 at 2018-08-23 23:40:20 -0500
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"Mad0D/7s71lunqsjwtL6QZOCPkJX8z4S5ERJy5fBkW/074YMdzWUvZiNfAWtzqcCht7UccvP/lz7f0zASTjDpA==", "photo"=>{"image_id"=>"", "tank_profile_id"=>""}, "commit"=>"Create Photo"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+Unpermitted parameter: :image_id
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:27
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/photos_controller.rb:27
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (1.6ms)
+  Rendered photos/new.html.erb within layouts/application (3.2ms)
+  Rendered shared/_navbar.html.erb (1.6ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 75.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2018-08-23 23:40:25 -0500
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:13
+  Rendered photos/index.html.erb within layouts/application (1.3ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 66.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:41:41 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 63.7ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/photos" for 127.0.0.1 at 2018-08-23 23:41:47 -0500
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.2ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:13
+  Rendered photos/index.html.erb within layouts/application (1.1ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 77.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/photos/new" for 127.0.0.1 at 2018-08-23 23:41:51 -0500
+Processing by PhotosController#new as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (18.6ms)
+  Rendered photos/new.html.erb within layouts/application (20.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 87ms (Views: 84.3ms | ActiveRecord: 0.3ms)
+
+
+Started POST "/photos" for 127.0.0.1 at 2018-08-23 23:42:01 -0500
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"pm8GmjBnZP/aBIOZStJ7RMC324UnsrsSdtE4AYVE8XdjJ/SZub4fGywXVL8lziYH1esxtruOe1xp6j0KW72jvA==", "photo"=>{"name"=>"", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8d014206e0 @tempfile=#<Tempfile:/var/folders/m9/q47nzbwd5mq1wzvfy5l3nvrm0000gn/T/RackMultipart20180823-15581-13f4yyr.jpg>, @original_filename="nasa-43569-unsplash.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"nasa-43569-unsplash.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+Unpermitted parameters: :name, :image
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:27
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/photos_controller.rb:27
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered photos/new.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 68.9ms | ActiveRecord: 0.3ms)
+
+
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT sqlite_version(*)[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (2.9ms)[0m  [1m[35mCREATE TABLE "schema_migrations" ("version" varchar NOT NULL PRIMARY KEY)[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (1.0ms)[0m  [1m[35mCREATE TABLE "ar_internal_metadata" ("key" varchar NOT NULL PRIMARY KEY, "value" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateDiscussions (20180821215504)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.4ms)[0m  [1m[35mCREATE TABLE "discussions" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "topic" varchar, "content" text, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180821215504_create_discussions.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180821215504"]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to DeviseCreateUsers (20180821222339)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "users" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "email" varchar DEFAULT '' NOT NULL, "encrypted_password" varchar DEFAULT '' NOT NULL, "first_name" varchar, "last_name" varchar, "reset_password_token" varchar, "reset_password_sent_at" datetime, "remember_created_at" datetime, "sign_in_count" integer DEFAULT 0 NOT NULL, "current_sign_in_at" datetime, "last_sign_in_at" datetime, "current_sign_in_ip" varchar, "last_sign_in_ip" varchar, "confirmation_token" varchar, "confirmed_at" datetime, "confirmation_sent_at" datetime, "unconfirmed_email" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180821222339_devise_create_users.rb:5
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_email" ON "users" ("email")[0m
+  ↳ db/migrate/20180821222339_devise_create_users.rb:42
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE UNIQUE INDEX "index_users_on_reset_password_token" ON "users" ("reset_password_token")[0m
+  ↳ db/migrate/20180821222339_devise_create_users.rb:43
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180821222339"]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to AddRolesToUsers (20180822165557)
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[35mALTER TABLE "users" ADD "roles" varchar[0m
+  ↳ db/migrate/20180822165557_add_roles_to_users.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.2ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180822165557"]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateTankProfiles (20180823020545)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "tank_profiles" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "profile_name" varchar, "display" varchar, "stand" varchar, "sump" varchar, "lighting" varchar, "filtration" varchar, "return_pump" varchar, "water_cirrculation" varchar, "calcium_reactor" varchar, "auto_top_off" varchar, "heating_and_cooling" varchar, "other_equipment" varchar, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180823020545_create_tank_profiles.rb:3
+  [1m[35m (0.1ms)[0m  [1m[35mCREATE  INDEX "index_tank_profiles_on_user_id" ON "tank_profiles" ("user_id")[0m
+  ↳ db/migrate/20180823020545_create_tank_profiles.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180823020545"]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreatePhotos (20180823020644)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "photos" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "tag" varchar, "name" varchar, "tank_profile_id" integer, "image_id" varchar, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180823020644_create_photos.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180823020644"]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Migrating to CreateComments (20180823145407)
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.3ms)[0m  [1m[35mCREATE TABLE "comments" ("id" integer PRIMARY KEY AUTOINCREMENT NOT NULL, "content" text, "discussion_id" integer, "user_id" integer, "created_at" datetime NOT NULL, "updated_at" datetime NOT NULL)[0m
+  ↳ db/migrate/20180823145407_create_comments.rb:3
+  [1m[36mActiveRecord::SchemaMigration Create (0.1ms)[0m  [1m[32mINSERT INTO "schema_migrations" ("version") VALUES (?)[0m  [["version", "20180823145407"]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Load (0.1ms)[0m  [1m[34mSELECT  "ar_internal_metadata".* FROM "ar_internal_metadata" WHERE "ar_internal_metadata"."key" = ? LIMIT ?[0m  [["key", "environment"], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[36mActiveRecord::InternalMetadata Create (0.3ms)[0m  [1m[32mINSERT INTO "ar_internal_metadata" ("key", "value", "created_at", "updated_at") VALUES (?, ?, ?, ?)[0m  [["key", "environment"], ["value", "development"], ["created_at", "2018-08-24 04:46:16.780436"], ["updated_at", "2018-08-24 04:46:16.780436"]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.6ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/rake-12.3.1/lib/rake/task.rb:271
+Started GET "/photos" for 127.0.0.1 at 2018-08-23 23:46:35 -0500
+  [1m[35m (0.1ms)[0m  [1m[34mSELECT "schema_migrations"."version" FROM "schema_migrations" ORDER BY "schema_migrations"."version" ASC[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/web-console-3.6.2/lib/web_console/middleware.rb:135
+Processing by PhotosController#index as HTML
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering photos/index.html.erb within layouts/application
+  [1m[36mPhoto Load (0.1ms)[0m  [1m[34mSELECT "photos".* FROM "photos"[0m
+  ↳ app/views/photos/index.html.erb:13
+  Rendered photos/index.html.erb within layouts/application (1.4ms)
+  Rendered shared/_navbar.html.erb (1.1ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 64ms (Views: 55.3ms | ActiveRecord: 0.9ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:46:45 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.4ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 76ms (Views: 74.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/discussions" for 127.0.0.1 at 2018-08-23 23:46:50 -0500
+Processing by DiscussionsController#index as HTML
+  Rendering discussions/index.html.erb within layouts/form
+  [1m[36mDiscussion Load (0.2ms)[0m  [1m[34mSELECT "discussions".* FROM "discussions"[0m
+  ↳ app/views/discussions/index.html.erb:16
+  Rendered discussions/index.html.erb within layouts/form (2.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 68.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-08-23 23:46:51 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/devise
+  Rendered devise/shared/_links.html.erb (0.9ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise (7.4ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 92ms (Views: 74.3ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/tanks" for 127.0.0.1 at 2018-08-23 23:46:52 -0500
+Processing by TankProfilesController#home as HTML
+  Rendering tank_profiles/home.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles"[0m
+  ↳ app/views/tank_profiles/home.html.erb:3
+  Rendered tank_profiles/home.html.erb within layouts/form (1.8ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:46:53 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.6ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 66.6ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/register" for 127.0.0.1 at 2018-08-23 23:47:07 -0500
+Processing by Devise::RegistrationsController#new as HTML
+  Rendering devise/registrations/new.html.erb within layouts/devise
+  Rendered devise/shared/_links.html.erb (0.8ms)
+  Rendered devise/registrations/new.html.erb within layouts/devise (4.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 73.5ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/" for 127.0.0.1 at 2018-08-23 23:47:35 -0500
+Processing by Devise::RegistrationsController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"tKE3mgmAxAE469AkK1XEtp1MmXAGO/kMV3kPv6iyQcico4uOVQflP2T+a9YofPRQJFxDEk++Uu0XSSmhPrc0Hw==", "user"=>{"email"=>"fq600@yahoo.com", "first_name"=>"Reefer", "last_name"=>"Tang", "password"=>"[FILTERED]", "password_confirmation"=>"[FILTERED]"}, "commit"=>"Sign up"}
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/devise-4.5.0/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Exists (0.2ms)[0m  [1m[34mSELECT  1 AS one FROM "users" WHERE "users"."email" = ? LIMIT ?[0m  [["email", "fq600@yahoo.com"], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/devise-4.5.0/app/controllers/devise/registrations_controller.rb:19
+  [1m[36mUser Create (0.4ms)[0m  [1m[32mINSERT INTO "users" ("email", "encrypted_password", "first_name", "last_name", "created_at", "updated_at", "roles") VALUES (?, ?, ?, ?, ?, ?, ?)[0m  [["email", "fq600@yahoo.com"], ["encrypted_password", "$2a$11$s0j/yrkMSRgv1DZIXbkZ0uRpQKx9NqahrPk03iJa/.bDgqw9ojKLm"], ["first_name", "Reefer"], ["last_name", "Tang"], ["created_at", "2018-08-24 04:47:36.123471"], ["updated_at", "2018-08-24 04:47:36.123471"], ["roles", "user"]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/devise-4.5.0/app/controllers/devise/registrations_controller.rb:19
+  [1m[35m (2.3ms)[0m  [1m[36mcommit transaction[0m
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/devise-4.5.0/app/controllers/devise/registrations_controller.rb:19
+Redirected to http://localhost:3000/
+Completed 302 Found in 146ms (ActiveRecord: 3.0ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-23 23:47:36 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.7ms)
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (3.7ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 75ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:47:52 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (4.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 63.5ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:47:58 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:13
+  Rendered tank_profiles/index.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 63.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/new" for 127.0.0.1 at 2018-08-23 23:47:59 -0500
+Processing by TankProfilesController#new as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/new.html.erb within layouts/form
+  Rendered tank_profiles/_form.html.erb (4.0ms)
+  Rendered tank_profiles/new.html.erb within layouts/form (6.2ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 65.0ms | ActiveRecord: 0.5ms)
+
+
+Started POST "/tank_profiles" for 127.0.0.1 at 2018-08-23 23:51:36 -0500
+Processing by TankProfilesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"rjsHm18r8CaOvKaXUM7NTKcgkI3IM/NcxwY5CW5AJ6/hkNBnQb0QszHNnS+/4rOFAwcKNnVbpzqGWWY9zCuRWg==", "tank_profile"=>{"profile_name"=>"SPS Dreamland", "display"=>"180g", "stand"=>"Euro-modern with dark oak", "sump"=>"BOA 100G custom sump", "lighting"=>"5X Mitras 7200", "filtration"=>"Turbo Aquatic ATS ", "return_pump"=>"Ecotech V1", "water_cirrculation"=>"Ecotech MP40", "calcium_reactor"=>"None!!!!", "auto_top_off"=>"Ecotech SC5", "heating_and_cooling"=>"Ecotech 12H and home AC", "other_equipment"=>"N/A"}, "commit"=>"Create Tank profile"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tank_profiles_controller.rb:29
+  [1m[36mTankProfile Create (0.5ms)[0m  [1m[32mINSERT INTO "tank_profiles" ("profile_name", "display", "stand", "sump", "lighting", "filtration", "return_pump", "water_cirrculation", "calcium_reactor", "auto_top_off", "heating_and_cooling", "other_equipment", "user_id", "created_at", "updated_at") VALUES (?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?, ?)[0m  [["profile_name", "SPS Dreamland"], ["display", "180g"], ["stand", "Euro-modern with dark oak"], ["sump", "BOA 100G custom sump"], ["lighting", "5X Mitras 7200"], ["filtration", "Turbo Aquatic ATS "], ["return_pump", "Ecotech V1"], ["water_cirrculation", "Ecotech MP40"], ["calcium_reactor", "None!!!!"], ["auto_top_off", "Ecotech SC5"], ["heating_and_cooling", "Ecotech 12H and home AC"], ["other_equipment", "N/A"], ["user_id", 1], ["created_at", "2018-08-24 04:51:36.438667"], ["updated_at", "2018-08-24 04:51:36.438667"]]
+  ↳ app/controllers/tank_profiles_controller.rb:29
+  [1m[35m (0.7ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tank_profiles_controller.rb:29
+Redirected to http://localhost:3000/tank_profiles/1
+Completed 302 Found in 50ms (ActiveRecord: 1.5ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-23 23:51:36 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (2.0ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 65.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-23 23:54:03 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 77ms (Views: 73.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-23 23:58:41 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 61.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-23 23:59:27 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 62.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:00:07 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 71ms (Views: 67.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:00:22 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 68ms (Views: 64.4ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:01:08 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 72.9ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:01:18 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.8ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 69.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:01:40 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 66ms (Views: 62.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:02:12 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 68.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:02:36 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 65.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:02:56 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.9ms)
+  Rendered shared/_navbar.html.erb (8.1ms)
+  Rendered shared/_footer.html.erb (0.5ms)
+Completed 200 OK in 76ms (Views: 72.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:03:34 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 61.8ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:04:21 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 67ms (Views: 63.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:05:01 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.9ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 72ms (Views: 69.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:05:12 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 64.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:06:52 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (12.2ms)
+Completed 500 Internal Server Error in 18ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `circulation' for #<TankProfile:0x00007f8cfa827588>):
+    43:           </tr>
+    44: 					<tr>
+    45:  						<th>Water Circulation</th>
+    46:             <td><%= @tank_profile.circulation %></td>
+    47:           </tr>
+    48: 					<tr>
+    49:  						<th>Calcium Reactor</th>
+  
+app/views/tank_profiles/show.html.erb:46:in `_app_views_tank_profiles_show_html_erb___395104752980363655_70121737499120'
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:07:18 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (13.2ms)
+Completed 500 Internal Server Error in 20ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `cirrculation' for #<TankProfile:0x00007f8d0129e768>):
+    43:           </tr>
+    44: 					<tr>
+    45:  						<th>Water Circulation</th>
+    46:             <td><%= @tank_profile.cirrculation  %></td>
+    47:           </tr>
+    48: 					<tr>
+    49:  						<th>Calcium Reactor</th>
+  
+app/views/tank_profiles/show.html.erb:46:in `_app_views_tank_profiles_show_html_erb___395104752980363655_70121793317580'
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:07:40 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (9.3ms)
+Completed 500 Internal Server Error in 15ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `reactor' for #<TankProfile:0x00007f8d00960cc8>):
+    47:           </tr>
+    48: 					<tr>
+    49:  						<th>Calcium Reactor</th>
+    50:             <td><%= @tank_profile.reactor %></td>
+    51:           </tr>
+    52: 					<tr>
+    53:  						<th>Auto Top Off</th>
+  
+app/views/tank_profiles/show.html.erb:50:in `_app_views_tank_profiles_show_html_erb___395104752980363655_70121788464400'
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:07:53 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 65ms (Views: 61.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1/edit" for 127.0.0.1 at 2018-08-24 00:08:13 -0500
+Processing by TankProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ? AND "tank_profiles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:58
+  Rendering tank_profiles/edit.html.erb within layouts/form
+  Rendered tank_profiles/_form.html.erb (4.0ms)
+  Rendered tank_profiles/edit.html.erb within layouts/form (6.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.6ms)
+Completed 200 OK in 74ms (Views: 70.2ms | ActiveRecord: 0.4ms)
+
+
+Started PATCH "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:08:44 -0500
+Processing by TankProfilesController#update as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"jRDv5R7iYl+vpr26VbcjTHaebfXEc+uFbLLeMDR/beyiKOmZ6ibW+m4MRRhEDzUJ/GrSQUZXwpTaKLLdYnmJGg==", "tank_profile"=>{"profile_name"=>"SPS Dreamland", "display"=>"180g", "stand"=>"Euro-modern with dark oak", "sump"=>"BOA 100G custom sump", "lighting"=>"5X Mitras 7200", "filtration"=>"Turbo Aquatic ATS ", "return_pump"=>"Ecotech V1", "water_cirrculation"=>"Ecotech MP40", "calcium_reactor"=>"AE 120 Calrx", "auto_top_off"=>"Ecotech SC5", "heating_and_cooling"=>"Ecotech 12H and home AC", "other_equipment"=>"N/A"}, "commit"=>"Update Tank profile", "id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ? AND "tank_profiles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:58
+  [1m[35m (0.1ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/tank_profiles_controller.rb:38
+  [1m[36mTankProfile Update (0.3ms)[0m  [1m[33mUPDATE "tank_profiles" SET "calcium_reactor" = ?, "updated_at" = ? WHERE "tank_profiles"."id" = ?[0m  [["calcium_reactor", "AE 120 Calrx"], ["updated_at", "2018-08-24 05:08:44.503201"], ["id", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:38
+  [1m[35m (0.5ms)[0m  [1m[36mcommit transaction[0m
+  ↳ app/controllers/tank_profiles_controller.rb:38
+Redirected to http://localhost:3000/tank_profiles/1
+Completed 302 Found in 7ms (ActiveRecord: 1.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:08:44 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:17
+  Rendered tank_profiles/show.html.erb within layouts/form (1.9ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 89ms (Views: 70.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:09:17 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:50
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 67ms (Views: 63.3ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:11:38 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 68.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:11:47 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.4ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 66ms (Views: 61.6ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:12:57 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (1.4ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 81ms (Views: 77.5ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:13:13 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (5.7ms)
+Completed 500 Internal Server Error in 13ms (ActiveRecord: 0.4ms)
+
+
+  
+ActionView::Template::Error (undefined method `stringify_keys' for "waves-effect waves-teal btn-flat":String):
+    52: 		<% if current_user.id == @tank_profile.user.id %>
+    53: 		<%= link_to 'Edit', edit_tank_profile_path(@tank_profile), class: "waves-effect waves-teal btn-flat"%>
+    54: 		<% end %> |
+    55: 		<%= link_to 'Back', :back, "waves-effect waves-teal btn-flat" %>
+  
+app/views/tank_profiles/show.html.erb:55:in `_app_views_tank_profiles_show_html_erb___395104752980363655_70121801584820'
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:13:22 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 74ms (Views: 71.4ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/1/edit" for 127.0.0.1 at 2018-08-24 00:13:24 -0500
+Processing by TankProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ? AND "tank_profiles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:58
+  Rendering tank_profiles/edit.html.erb within layouts/form
+  Rendered tank_profiles/_form.html.erb (5.3ms)
+  Rendered tank_profiles/edit.html.erb within layouts/form (7.9ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 84ms (Views: 80.4ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-24 00:13:29 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:12
+  Rendered tank_profiles/index.html.erb within layouts/form (1.4ms)
+  Rendered shared/_navbar.html.erb (2.0ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 76ms (Views: 73.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:13:31 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (2.4ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 78ms (Views: 73.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1/edit" for 127.0.0.1 at 2018-08-24 00:13:35 -0500
+Processing by TankProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ? AND "tank_profiles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:58
+  Rendering tank_profiles/edit.html.erb within layouts/form
+  Rendered tank_profiles/_form.html.erb (4.9ms)
+  Rendered tank_profiles/edit.html.erb within layouts/form (7.1ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 72ms (Views: 68.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-24 00:13:37 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:12
+  Rendered tank_profiles/index.html.erb within layouts/form (2.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 71.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:13:42 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (1.6ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 64.5ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:14:11 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 74ms (Views: 71.0ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-24 00:14:13 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:12
+  Rendered tank_profiles/index.html.erb within layouts/form (2.9ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 79ms (Views: 75.3ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:14:14 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (2.7ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 77.0ms | ActiveRecord: 0.6ms)
+
+
+Started GET "/tank_profiles/1/edit" for 127.0.0.1 at 2018-08-24 00:14:16 -0500
+Processing by TankProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.2ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ? AND "tank_profiles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:58
+  Rendering tank_profiles/edit.html.erb within layouts/form
+  Rendered tank_profiles/_form.html.erb (4.0ms)
+  Rendered tank_profiles/edit.html.erb within layouts/form (6.2ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 82ms (Views: 77.2ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-24 00:14:19 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:12
+  Rendered tank_profiles/index.html.erb within layouts/form (2.4ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 68ms (Views: 64.0ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:14:20 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 77ms (Views: 73.0ms | ActiveRecord: 0.5ms)
+
+
+Started GET "/tank_profiles/1/edit" for 127.0.0.1 at 2018-08-24 00:14:21 -0500
+Processing by TankProfilesController#edit as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ? AND "tank_profiles"."id" = ? LIMIT ?[0m  [["user_id", 1], ["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:58
+  Rendering tank_profiles/edit.html.erb within layouts/form
+  Rendered tank_profiles/_form.html.erb (3.6ms)
+  Rendered tank_profiles/edit.html.erb within layouts/form (5.9ms)
+  Rendered shared/_navbar.html.erb (1.2ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 75ms (Views: 70.9ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-24 00:14:24 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:12
+  Rendered tank_profiles/index.html.erb within layouts/form (1.9ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 75ms (Views: 71.8ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:14:25 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (2.3ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 65.6ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles" for 127.0.0.1 at 2018-08-24 00:14:55 -0500
+Processing by TankProfilesController#index as HTML
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendering tank_profiles/index.html.erb within layouts/form
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."user_id" = ?[0m  [["user_id", 1]]
+  ↳ app/views/tank_profiles/index.html.erb:12
+  Rendered tank_profiles/index.html.erb within layouts/form (1.5ms)
+  Rendered shared/_navbar.html.erb (1.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 67.3ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:15:05 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (1.7ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 71ms (Views: 67.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:19:13 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (4.0ms)
+  Rendered shared/_navbar.html.erb (1.9ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 113ms (Views: 74.1ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:19:34 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.3ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (2.5ms)
+  Rendered shared/_navbar.html.erb (1.7ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 64.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:20:07 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (3.1ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.2ms)
+Completed 200 OK in 78ms (Views: 74.2ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:20:43 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (3.3ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 70ms (Views: 65.8ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:21:16 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:52
+  Rendered tank_profiles/show.html.erb within layouts/form (3.1ms)
+  Rendered shared/_navbar.html.erb (2.1ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 79ms (Views: 74.7ms | ActiveRecord: 0.4ms)
+
+
+Started GET "/tank_profiles/1" for 127.0.0.1 at 2018-08-24 00:22:32 -0500
+Processing by TankProfilesController#show as HTML
+  Parameters: {"id"=>"1"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  [1m[36mTankProfile Load (0.1ms)[0m  [1m[34mSELECT  "tank_profiles".* FROM "tank_profiles" WHERE "tank_profiles"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/controllers/tank_profiles_controller.rb:13
+  Rendering tank_profiles/show.html.erb within layouts/form
+  [1m[36mUser Load (0.1ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ app/views/tank_profiles/show.html.erb:88
+  Rendered tank_profiles/show.html.erb within layouts/form (2.8ms)
+  Rendered shared/_navbar.html.erb (1.3ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 69ms (Views: 64.5ms | ActiveRecord: 0.4ms)
+
+
+Started POST "/photos" for 127.0.0.1 at 2018-08-24 00:23:36 -0500
+Processing by PhotosController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"NwudCL98M3J4UDZ6ZbXBBCA/BMG0OZop4TiKeLPnO4q2ND7SUAeTsEKWnJbtmVOfj4H0msS1+mVq0QKVgC8apQ==", "photo"=>{"name"=>"Kuma", "tag"=>"dog", "image"=>#<ActionDispatch::Http::UploadedFile:0x00007f8cfb4c8b20 @tempfile=#<Tempfile:/var/folders/m9/q47nzbwd5mq1wzvfy5l3nvrm0000gn/T/RackMultipart20180824-15581-1yqu9gb.jpg>, @original_filename="kuma.jpg", @content_type="image/jpeg", @headers="Content-Disposition: form-data; name=\"photo[image]\"; filename=\"kuma.jpg\"\r\nContent-Type: image/jpeg\r\n">}, "commit"=>"Create Photo"}
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+Unpermitted parameters: :name, :tag, :image
+  [1m[35m (0.0ms)[0m  [1m[36mbegin transaction[0m
+  ↳ app/controllers/photos_controller.rb:27
+  [1m[35m (0.0ms)[0m  [1m[31mrollback transaction[0m
+  ↳ app/controllers/photos_controller.rb:27
+  Rendering photos/new.html.erb within layouts/application
+  Rendered photos/_form.html.erb (2.0ms)
+  Rendered photos/new.html.erb within layouts/application (3.8ms)
+  Rendered shared/_navbar.html.erb (1.5ms)
+  Rendered shared/_footer.html.erb (0.4ms)
+Completed 200 OK in 78ms (Views: 74.6ms | ActiveRecord: 0.3ms)
+
+
+Started GET "/" for 127.0.0.1 at 2018-08-24 00:23:49 -0500
+Processing by PagesController#home as HTML
+  Rendering pages/home.html.erb within layouts/application
+  Rendered pages/home.html.erb within layouts/application (0.5ms)
+  [1m[36mUser Load (0.2ms)[0m  [1m[34mSELECT  "users".* FROM "users" WHERE "users"."id" = ? ORDER BY "users"."id" ASC LIMIT ?[0m  [["id", 1], ["LIMIT", 1]]
+  ↳ /Users/Kid/.rvm/gems/ruby-2.5.1/gems/orm_adapter-0.5.0/lib/orm_adapter/adapters/active_record.rb:17
+  Rendered shared/_navbar.html.erb (2.4ms)
+  Rendered shared/_footer.html.erb (0.3ms)
+Completed 200 OK in 69ms (Views: 66.4ms | ActiveRecord: 0.2ms)
+
+

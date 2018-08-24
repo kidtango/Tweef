@@ -56,3 +56,6 @@ gem "devise", "~> 4.2"
 gem "materialize-sass"
 gem "material_icons"
 gem "petergate", "~> 1.6", ">= 1.6.3"
+
+gem "refile", require: "refile/rails", github: "refile/refile"
+gem "refile-mini_magick"

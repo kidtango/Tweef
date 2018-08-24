@@ -1,7 +1,7 @@
 class User < ApplicationRecord
   has_many :discussions
   has_many :tank_profiles
-  has_many :photos, through: :tank_profile
+  has_many :photos, through: :tank_profiles
   has_many :comments
 
   ############################################################################################
